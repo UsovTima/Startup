@@ -1,0 +1,66 @@
+.main-banner {
+    background-color: rgba(0,0,0,0.451);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../bg-images/banner.jpg');
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0 0 0 200vw rgba(0,0,0,.451);
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 305px 5px 260px;
+
+        @include screen(1024) {
+            padding: 155px 5px 110px;
+        }
+
+        @include screen(768) {
+            padding: 100px 5px 55px;
+        }
+        
+    }
+
+    &__title3 {
+        font: 400 48px/1.5 $font-montserrat;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+
+        @include screen(768) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        font: 400 20px/1.2 $font-roboto;
+        color: $white;
+        text-align: center;
+        padding-bottom: 52px;
+
+        @include screen(768) {
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__button {
+        border: 2px solid $white;
+        font: 400 16px/1.5 $font-montserrat;
+        color: $white;
+        width: 180px;
+        padding: 11px 0;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0);
+
+        &:hover {
+            background: $white;
+            color: #f00;
+        }
+    }
+}
+  
+  
