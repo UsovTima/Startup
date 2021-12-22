@@ -71,6 +71,20 @@ $(window).scroll(function(){
     }
 })
 
+//Anchor links
+$('a').on('click', function (e) {
+    const headerHeight = $('.header').outerHeight();
+    if(this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top -headerHeight
+        }, 500, function () {
+            window.location.hash = hash;
+        })
+    }
+})
 
 // Tabs
 $('.tabs__button').on('click', function () {
