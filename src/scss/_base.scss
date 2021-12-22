@@ -47,14 +47,14 @@ table {
     border-collapse: collapse;
 }
 
+section {
+    padding: 92px 0;
+}
+
 .wrapper {
     overflow: hidden;
     position: relative;
 }
-
-// section {
-//     padding: 92px 0;
-// }
 
 .container {
     max-width: 1170px;
@@ -161,22 +161,22 @@ table {
 }
 
 .red {
-    color:$red;
+    color: $red;
 }
 
-form {
+.form {
 
-    input [type='text'],
-    input [type='email'],
+    input[type='text'],
+    input[type='email'],
     textarea,
     .button-dark {
         border: 1px solid $font-color;
-        height: 42px;
+        height: 44px;
         padding: 5px 15px;
         outline: none;
+        font-size: 12px;
         width: 100%;
         font-family: $font-roboto;
-
 
         &:focus {
             border-color: $red;
@@ -211,9 +211,8 @@ form {
         display: flex;
         justify-content: space-between;
 
-        
-    input [type='text'],
-    input [type='email'] {
+        input[type='text'],
+        input[type='email'] {
             width: calc(50% - 15px);
         }
     }

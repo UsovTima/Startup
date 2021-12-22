@@ -45,9 +45,6 @@ $(document).ready(function (){
     //Clients slider
     const clients_swiper = new Swiper('.clients__swiper', {
         loop: true,
-        autoplay: {
-            delay: 5000,
-        },
         slidesPerView: 1,
         spaceBetween: 30,
         autoHeight: true,
@@ -73,18 +70,18 @@ $(window).scroll(function(){
 
 //Anchor links
 $('a').on('click', function (e) {
-    const headerHeight = $('.header').outerHeight();
+    e.preventDefault();
+    const hh = $('.header').outerHeight();
     if(this.hash !== '') {
-        e.preventDefault();
-
         const hash = this.hash;
         $('html, body').animate({
-            scrollTop: $(hash).offset().top -headerHeight
-        }, 500, function () {
-            window.location.hash = hash;
+            scrollTop: $(hash).offset().top - hh
+        }, 300, function () {
+            window.location.hash = hash - hh;
         })
     }
 })
+
 
 // Tabs
 $('.tabs__button').on('click', function () {
