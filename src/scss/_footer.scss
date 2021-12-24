@@ -1,0 +1,24 @@
+.footer {
+	display: flex;
+	min-height: 307px;
+	padding-top: 95px;
+
+	.main-title:after {
+		background-color: $white;
+	}
+
+	p {
+		text-transform: uppercase;
+		color: $white;
+	}
+
+	img {
+		margin-left: 14px;
+	}
+
+	img:hover {
+		background-image: url('../images/bird-footer-hover.jpg');
+		transition: .5s;
+		z-index: 10;
+	}
+}

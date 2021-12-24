@@ -394,7 +394,8 @@ ul {
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  cursor: pointer; }
 
 body {
   font: 400 14px/1.25 "Roboto Slab", "Times New Roman", serif;
@@ -555,6 +556,9 @@ section {
   align-items: center; }
   .form__footer .button-dark {
     margin-right: 38px; }
+
+.bg-footer {
+  background: #c0301c; }
 
 .header {
   position: fixed;
@@ -975,10 +979,10 @@ section {
       .blog .paralax__title span {
         text-transform: uppercase;
         font-size: 30px; }
+        @media (max-width: 600px) {
+          .blog .paralax__title span {
+            font-size: 20px; } }
       @media (max-width: 600px) {
-        .blog .paralax__title {
-          font-size: 25px; } }
-      @media (max-width: 320px) {
         .blog .paralax__title {
           font-size: 20px; } }
     .blog .paralax__button-wrapper {
@@ -995,6 +999,10 @@ section {
   .blog__item {
     display: flex;
     padding: 38px 0; }
+    @media (max-width: 900px) {
+      .blog__item {
+        flex-direction: column;
+        padding-right: 10px; } }
     .blog__item + .blog__item {
       border-top: 1px solid #ddd; }
   .blog__image {
@@ -1002,9 +1010,16 @@ section {
     display: flex;
     flex-shrink: 0;
     justify-content: center; }
+    @media (max-width: 900px) {
+      .blog__image {
+        width: 100%;
+        margin-bottom: 25px; } }
   .blog__description {
     padding-left: 40px;
     flex-grow: 1; }
+    @media (max-width: 480px) {
+      .blog__description {
+        padding-left: 20px; } }
   .blog__item-header {
     display: flex;
     align-items: center;
@@ -1106,6 +1121,22 @@ section {
       max-width: 15px; }
     .contact__info-item:last-child img {
       top: 4px; }
+
+.footer {
+  display: flex;
+  min-height: 307px;
+  padding-top: 95px; }
+  .footer .main-title:after {
+    background-color: #fff; }
+  .footer p {
+    text-transform: uppercase;
+    color: #fff; }
+  .footer img {
+    margin-left: 14px; }
+  .footer img:hover {
+    background-image: url(../images/bird-footer-hover.jpg);
+    transition: .5s;
+    z-index: 10; }
 
 
 /*# sourceMappingURL=style.css.map*/
