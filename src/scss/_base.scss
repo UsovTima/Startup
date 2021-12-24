@@ -26,6 +26,7 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 body {
@@ -227,4 +228,8 @@ section {
             margin-right: 38px;
         }
     }
+}
+
+.bg-footer {
+    background: $red;
 }
