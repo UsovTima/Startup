@@ -15,8 +15,6 @@
         position: relative;
         height: 320px;
 
-        
-
         img {
             position: absolute;
             left: 50%;
@@ -59,6 +57,21 @@
         &__item {
             display: none;
 
+            @include screen (760) {
+                .row {
+                    flex-direction: row;
+
+                    .col-33 {
+                        width: 40%;
+                        object-fit: cover;
+
+                        .works__image {
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+
             .col-33 {
                 display: block;
                 position: relative;
@@ -66,7 +79,6 @@
                 margin: 15px;
 
                 &:hover {
-
                     .works__description {
                         opacity: 1;
                     }

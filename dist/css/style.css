@@ -891,6 +891,14 @@ section {
 
 .works .tabs__item {
   display: none; }
+  @media (max-width: 760px) {
+    .works .tabs__item .row {
+      flex-direction: row; }
+      .works .tabs__item .row .col-33 {
+        width: 40%;
+        object-fit: cover; }
+        .works .tabs__item .row .col-33 .works__image {
+          height: 200px; } }
   .works .tabs__item .col-33 {
     display: block;
     position: relative;
@@ -1092,6 +1100,14 @@ section {
 
 .contact__content {
   display: flex; }
+  @media (max-width: 570px) {
+    .contact__content {
+      flex-direction: column; }
+      .contact__content .contact__info {
+        margin-bottom: 15px; }
+      .contact__content .contact__form {
+        flex-basis: 265px;
+        max-width: 500px; } }
 
 .contact__form {
   max-width: 730px;
@@ -1131,12 +1147,12 @@ section {
   .footer p {
     text-transform: uppercase;
     color: #fff; }
-  .footer img {
-    margin-left: 14px; }
-  .footer img:hover {
-    background-image: url(../images/bird-footer-hover.jpg);
-    transition: .5s;
-    z-index: 10; }
+  .footer a {
+    transition: 1s; }
+    .footer a img {
+      margin-left: 14px; }
+      .footer a img:hover {
+        background-image: url(../images/bird-footer-hover.jpg); }
 
 
 /*# sourceMappingURL=style.css.map*/

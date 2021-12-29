@@ -12,13 +12,15 @@
 		color: $white;
 	}
 
-	img {
-		margin-left: 14px;
-	}
+	a {
+		transition: 1s;
 
-	img:hover {
-		background-image: url('../images/bird-footer-hover.jpg');
-		transition: .5s;
-		z-index: 10;
+		img {
+			margin-left: 14px;
+
+			&:hover {
+				background-image: url('../images/bird-footer-hover.jpg');
+			}
+		}
 	}
 }

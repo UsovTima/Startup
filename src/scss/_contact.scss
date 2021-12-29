@@ -2,6 +2,19 @@
 
     &__content {
         display: flex;
+
+        @include screen(570) {
+            flex-direction: column;
+
+            .contact__info {
+                margin-bottom: 15px;
+            }
+
+            .contact__form {
+                flex-basis: 265px;
+                max-width: 500px;
+            }
+        }
     }
 
     &__form {
